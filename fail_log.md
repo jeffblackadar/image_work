@@ -15,6 +15,8 @@ https://github.com/binder-examples/r
 
 https://hub.gke.mybinder.org/user/shawngraham-bin-with-tensorflow-php6a9xn/tree
 
+https://colab.research.google.com/github/tensorflow/examples/blob/master/community/en/flowers_tf_lite.ipynb
+
 
 
 # OCRR
