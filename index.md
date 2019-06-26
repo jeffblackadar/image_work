@@ -22,8 +22,16 @@
 
 ### Third party use
 + Third party use (examples: company, educational institution, government body)
-   + Will a third party have access to the data as a result of a licence agreement?
-     + Implication: Ensure the terms of usage would not lead to potential harm or non-permitted use. Avoid the use of cloud storage by companies such as Google, Microsoft, etc. in cases where data is sensitive.
+  + Will a third party have access to the data as a result of a licence agreement?
+    + Implication: Ensure the terms of usage would not lead to potential harm or non-permitted use. Avoid the use of cloud storage by companies such as Google, Microsoft, etc. in cases where data is sensitive. (The use of Google Colaboratory, Azure's API, Binder, GitHub should be considered vs a purely local environment.)
+  + Will a third party have access to the data as a result of a geography?
+    + Implication: Can the agency of a national government access the data because it transits or is stored in their country? Consider where data is stored and how is it transmitted as part of the project.
+     
+### Loss
++ Loss/Destruction
+  + If the data was lost, destroyed or degraded would it result in a loss of an asset?
+    + Implication: Ensure the data is backedup. Test that data can be restored to its original state. Ensure backups are protected.
+  
      
 
 
