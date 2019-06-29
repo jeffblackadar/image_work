@@ -67,5 +67,21 @@ train_on_gpu = torch.cuda.is_available()
 if not train_on_gpu:    print('Bummer!  Training on CPU ...')
 else:    print('You are good to go!  Training on GPU ...')
 
+## Google Deep Learning Containers
+### Introducing Deep Learning Containers: 
+I followed these instructions:
+https://cloud.google.com/blog/products/ai-machine-learning/introducing-deep-learning-containers-consistent-and-portable-environments
 
+I installed this
+### Google CLOUD SDK
+Command-line interface for Google Cloud Platform products and services
+https://cloud.google.com/sdk/
+I installed this for just user jblackad locally
 
+Worry - can I and others use this inexpensively?
+
+In Google Cloud SDK Shell I listed:
+
+gcloud container images list --repository="gcr.io/deeplearning-platform-release"
+
+XXXXXX - ok it looks like I need Docker to pull this container in locally. That likely can't happen on my work machine which is locked down.
