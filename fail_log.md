@@ -85,3 +85,5 @@ In Google Cloud SDK Shell I listed:
 gcloud container images list --repository="gcr.io/deeplearning-platform-release"
 
 XXXXXX - ok it looks like I need Docker to pull this container in locally. That likely can't happen on my work machine which is locked down.
+## Image classification
+https://towardsdatascience.com/wtf-is-image-classification-8e78a8235acb
