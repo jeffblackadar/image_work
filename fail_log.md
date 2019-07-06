@@ -87,3 +87,9 @@ gcloud container images list --repository="gcr.io/deeplearning-platform-release"
 XXXXXX - ok it looks like I need Docker to pull this container in locally. That likely can't happen on my work machine which is locked down.
 ## Image classification
 https://towardsdatascience.com/wtf-is-image-classification-8e78a8235acb
+
+## Google Colab (Colaboratory)
+
+I can run R in Colab and install
+install.packages('ggmap')
+install.packages('codetools')
