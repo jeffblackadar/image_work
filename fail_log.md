@@ -128,3 +128,36 @@ Traceback:
  
  But I am unable to make this work in Google colab at this time so I am switching to Python
  
+ ### Installing keras 
+ per Setting up GPU support P317  A.3.1 Installing CUDA
+ I did:
+ ! sudo apt-get install cuda-8-0
+ and got this error:
+ E: Unable to locate package cuda-8-0
+ 
+ Per this note https://github.com/tensorflow/tensorflow/issues/16214
+ I ran this
+ ! sudo apt-cache search cuda-command-line-tool
+ 
+ got this output:
+ cuda-command-line-tools-10-0 - CUDA command-line tools
+cuda-command-line-tools-10-1 - CUDA command-line tools
+
+and so ran:
+ ! sudo apt-get install cuda-*10*-0
+
+ and it worked.
+ 
+ Made account at
+ https://developer.nvidia.com/cudnn
+ 
+ Selected
+ Download cuDNN v7.6.1 (June 24, 2019), for CUDA 10.0
+ downloaded
+ cuDNN Developer Library for Ubuntu18.04 (Deb)
+ 
+ ! sudo dpkg -i /libcudnn7*.deb
+ 
+ ## I am stil lhaving trouble with R and Google Colab
+ 
+ 
