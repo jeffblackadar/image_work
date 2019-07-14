@@ -93,3 +93,38 @@ https://towardsdatascience.com/wtf-is-image-classification-8e78a8235acb
 I can run R in Colab and install
 install.packages('ggmap')
 install.packages('codetools')
+
+
+### Problem installing keras in Google colab with R.
+when I run 
+```
+Sys.which('virtualenv')
+file.exists('/usr/local/bin/virtualenv')
+#install.packages("keras")
+library(keras)
+install_keras()
+```
+I get:
+```
+virtualenv: ''
+FALSE
+Error: Prerequisites for installing TensorFlow not available.
+
+Execute the following at a terminal to install the prerequisites:
+
+$ sudo apt-get install python-virtualenv
+
+
+Traceback:
+
+1. install_keras()
+2. install_tensorflow(method = method, conda = conda, version = tensorflow, 
+ .     extra_packages = c(paste0("keras", version), extra_packages))
+3. stop("Prerequisites for installing TensorFlow not available.\n\n", 
+ .     install_commands, "\n\n", call. = FALSE)
+ ```
+ I did see this: 
+ https://github.com/rstudio/tensorflow/issues/201
+ 
+ But I am unable to make this work in Google colab at this time so I am switching to Python
+ 
