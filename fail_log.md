@@ -158,6 +158,24 @@ and so ran:
  
  ! sudo dpkg -i /libcudnn7*.deb
  
- ## I am stil lhaving trouble with R and Google Colab
+ I am stil lhaving trouble with R and Google Colab
+ - But I am still going to work with it since it seems easier to make something that can be explained and reused.
+ 
+ # Creating a new set of images for training a model.
+ I wanted to create an image processor on Colab using R, but I still have problems importing libraries like imager into Colab, so I will use Python
+ 
+ ### Old Weather
+ https://www.oldweather.org/naval_rendezvous.html
+ 
+ I was thinking of using numbers from the ships' logs of this project, but that does not seem that appropriate for machine learning and traditional OCR is likely a better solution.
+ 
+ I took pictures of coins.
+ What I learned from that so far:
+ * nickels are too shiny for good photographs. I am using old copper pennies
+ * taking photographs from too high does not give a good result.
+ * note a row number on the background
+ * a picture of 6 coins (2 rows of 3) seems to work
+ 
+ 
  
  
