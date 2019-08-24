@@ -176,6 +176,39 @@ and so ran:
  * note a row number on the background
  * a picture of 6 coins (2 rows of 3) seems to work
  
+ # Image inpainting
  
+ I want to work with Mathias Gruber's PConv-Keras:
+ https://github.com/MathiasGruber/PConv-Keras  
  
+ I have had trouble cloning it to Colab
+ So I am following Eduardo Rosas' instruction
+ https://lalorosas.com/blog/github-colab-drive
+ 
+ ## Steps to clone the repo
+ https://colab.research.google.com
+ new Python 3 Notebook
+ 
+ Mounted the drive
+ from google.colab import drive
+drive.mount('/content/drive')
+
+### Make a repos directory
+import os
+
+new_dir = "/content/drive/My Drive/repos"
+if not os.path.exists(new_dir):
+    os.mkdir(new_dir)
+
+new_dir = "/content/drive/My Drive/repos/MathiasGruber"
+if not os.path.exists(new_dir):
+    os.mkdir(new_dir)
+
+%cd $new_dir
+!pwd
+
+#Clone the repo
+!git clone https://github.com/MathiasGruber/PConv-Keras
+
+#now: "open drive.google.com, navigate to that folder, select the file, and click to open with>Colab." - Eduardo Rosas
  
