@@ -228,8 +228,10 @@ new_dir = "/content/drive/My Drive/repos/MathiasGruber/PConv-Keras"
 
 #### Step2 - Partial Convolution Layer.ipynb
 Opened it from google Drive
+Did the standard steps of changing the runtime, mounting the drive and setting up the directory
 
 #### Step 3
+Did the standard steps of changing the runtime, mounting the drive and setting up the directory
 Had to change model - I am not sure if this worked
 Per here: https://github.com/MathiasGruber/PConv-Keras/issues/38
 "the pytorch_vgg16.h5 can be downloaded from https://drive.google.com/file/d/1HOzmKQFljTdKWftEP-kWD7p2paEaeHM0/view "
@@ -238,4 +240,9 @@ I moved this to /content/drive/My Drive/repos/MathiasGruber/PConv-Kera/data/logs
  Instantiate model
 #model = PConvUnet(vgg_weights='./data/logs/pytorch_vgg16.h5')
 model = PConvUnet(vgg_weights='./data/logs/pytorch_to_keras_vgg16.h5')
+
+#### Step 4
+Did the standard steps of changing the runtime, mounting the drive and setting up the directory
+!pip install keras-tqdm
+ 
  
