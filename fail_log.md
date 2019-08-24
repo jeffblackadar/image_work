@@ -244,5 +244,6 @@ model = PConvUnet(vgg_weights='./data/logs/pytorch_to_keras_vgg16.h5')
 #### Step 4
 Did the standard steps of changing the runtime, mounting the drive and setting up the directory
 !pip install keras-tqdm
- 
- 
+
+can't mess wth 512,512
+Got out of resrouce errors - rest runtime - that fixed it
