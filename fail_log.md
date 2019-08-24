@@ -211,4 +211,31 @@ if not os.path.exists(new_dir):
 !git clone https://github.com/MathiasGruber/PConv-Keras
 
 #now: "open drive.google.com, navigate to that folder, select the file, and click to open with>Colab." - Eduardo Rosas
+
+#### Step1 - Mask Generation.ipynb
+Opened it from google Drive
+
+##### Standard for these notebooks
+Changed runtime to Runtime | Change runtime... Runtime type: Python3, hardware accelerator: GPU
+
+Mounted the drive
+
+#Set up the directory
+new_dir = "/content/drive/My Drive/repos/MathiasGruber/PConv-Keras"
+%cd $new_dir
+!pwd
+
+
+#### Step2 - Partial Convolution Layer.ipynb
+Opened it from google Drive
+
+#### Step 3
+Had to change model - I am not sure if this worked
+Per here: https://github.com/MathiasGruber/PConv-Keras/issues/38
+"the pytorch_vgg16.h5 can be downloaded from https://drive.google.com/file/d/1HOzmKQFljTdKWftEP-kWD7p2paEaeHM0/view "
+I moved this to /content/drive/My Drive/repos/MathiasGruber/PConv-Kera/data/logs
+
+ Instantiate model
+#model = PConvUnet(vgg_weights='./data/logs/pytorch_vgg16.h5')
+model = PConvUnet(vgg_weights='./data/logs/pytorch_to_keras_vgg16.h5')
  
