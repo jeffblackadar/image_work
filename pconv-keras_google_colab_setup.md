@@ -1,4 +1,4 @@
-# Steps I used to set up Mathias Gruber's PConv-Keras in Google Colab
+# Steps used to set up Mathias Gruber's PConv-Keras in Google Colab
  
 https://github.com/MathiasGruber/PConv-Keras  
  
