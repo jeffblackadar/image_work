@@ -247,3 +247,12 @@ Did the standard steps of changing the runtime, mounting the drive and setting u
 
 can't mess wth 512,512
 Got out of resrouce errors - rest runtime - that fixed it
+
+### using different weights
+# Load weights from previous run
+model = PConvUnet()
+model.load(
+    r"/content/drive/My Drive/repos/MathiasGruber/PConv-Keras/data/logs/imagenet_phase2/weights.02-4.26.h5",
+    train_bn=False,
+    lr=0.00005
+)
