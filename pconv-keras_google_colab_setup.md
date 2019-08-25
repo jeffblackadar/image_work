@@ -14,11 +14,14 @@ https://colab.research.google.com
 new Python 3 Notebook
  
 ### Mount Google Drive drive
-````
+
+```
 from google.colab import drive
 drive.mount('/content/drive')
 ```
+
 ### Make a repos directory
+
 ```
 import os
 
@@ -33,10 +36,13 @@ if not os.path.exists(new_dir):
 %cd $new_dir
 !pwd
 ```
+
 ### Clone the repo
+
 ```
 !git clone https://github.com/MathiasGruber/PConv-Keras
 ```
+
 ### Open the notebooks in Colab from Drive
 Open drive.google.com
 
@@ -63,6 +69,7 @@ Change runtime to Runtime | Change runtime... Runtime type: Python3, hardware ac
 Mounted the Google Drive
 
 Run:
+
 ```
 #Set up the directory
 new_dir = "/content/drive/My Drive/repos/MathiasGruber/PConv-Keras"
@@ -82,6 +89,7 @@ Per here: https://github.com/MathiasGruber/PConv-Keras/issues/38
 I moved this to /content/drive/My Drive/repos/MathiasGruber/PConv-Kera/data/logs
 
 I changed
+
 ```
 Instantiate model
 #model = PConvUnet(vgg_weights='./data/logs/pytorch_vgg16.h5')
@@ -91,6 +99,8 @@ model = PConvUnet(vgg_weights='./data/logs/pytorch_to_keras_vgg16.h5')
 ### Step4 - Imagenet Training.ipynb
 Follow standard steps above of changing the runtime, mounting the drive and setting up the directory.
 
+```
 !pip install keras-tqdm
+```
 
 # This is not finished.  This is where I am at this time.
