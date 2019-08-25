@@ -1,6 +1,8 @@
 # Steps used to set up Mathias Gruber's PConv-Keras in Google Colab
  
 https://github.com/MathiasGruber/PConv-Keras  
+
+This is used under this [licence](https://github.com/MathiasGruber/PConv-Keras/blob/master/LICENSE)
  
 Thanks to Eduardo Rosas' instructions here:
  
@@ -88,7 +90,7 @@ Per here: https://github.com/MathiasGruber/PConv-Keras/issues/38
 "the pytorch_vgg16.h5 can be downloaded from https://drive.google.com/file/d/1HOzmKQFljTdKWftEP-kWD7p2paEaeHM0/view "
 I moved this to /content/drive/My Drive/repos/MathiasGruber/PConv-Kera/data/logs
 
-I changed
+I changed:
 
 ```
 Instantiate model
@@ -103,4 +105,4 @@ Follow standard steps above of changing the runtime, mounting the drive and sett
 !pip install keras-tqdm
 ```
 
-# This is not finished.  This is where I am at this time.
+## This is not finished.  This is where I am at this time.
