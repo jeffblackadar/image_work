@@ -161,6 +161,82 @@ and so ran:
  I am stil lhaving trouble with R and Google Colab
  - But I am still going to work with it since it seems easier to make something that can be explained and reused.
  
+ # Installing GPU with Keras part 2
+ I am using a new Windows 10 home edition machine
+ Anaconda is installed
+ I am using Anaconda Navigator
+ 
+ ## Installing NVidia CUDA 
+ Thanks to:
+ https://towardsdatascience.com/tensorflow-gpu-installation-made-easy-use-conda-instead-of-pip-52e5249374bc
+ 
+ ### Download and Install Cuda Toolkit from here.
+ https://developer.nvidia.com/cuda-downloads
+ Use 10.0 not 10.2 *Note. CUDA 10.2 does not work with Tensorflow 2 at the time of writing 14 Dec. 2019 per https://github.com/tensorflow/tensorflow/issues/32381*
+ 
+ #### Download cuDNN by signing up on Nvidia Developer Website
+ https://developer.nvidia.com/rdp/cudnn-download
+ Use 10.0 not 10.2
+ 
+#### Download cuDNN v7.6.5 (November 5th, 2019), for CUDA 10.0
+ cuDNN Library for Windows 10
+ 
+ 
+ ### Installing CUDA from
+ https://docs.nvidia.com/deeplearning/sdk/cudnn-install/index.html
+ 
+ 4.3. Installing cuDNN On Windows
+The following steps describe how to build a cuDNN dependent program. In the following sections the CUDA v9.0 is used as example:
+Your CUDA directory path is referred to as C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.2
+Your cuDNN directory path is referred to as <installpath>
+
+From: http://bailiwick.io/2017/11/05/tensorflow-gpu-windows-and-jupyter/
+<installpath> = C:\Program Files\NVIDIA GPU Computing Toolkit\cudnn_10.0
+ Add this to PATH
+ 
+Navigate to your <installpath> directory containing cuDNN.
+Unzip the cuDNN package. 
+cudnn-10.2-windows7-x64-v7.6.5.32.zip
+or
+cudnn-10.2-windows10-x64-v7.6.5.32.zip
+ Done
+ 
+Copy the following files into the CUDA Toolkit directory.
+Copy <installpath>\cuda\bin\cudnn64_7.6.5.32.dll to C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.2\bin.
+ Done
+Copy <installpath>\cuda\ include\cudnn.h to C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.2\include.
+ done
+ 
+Copy <installpath>\cuda\lib\x64\cudnn.lib to C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.2\lib\x64.
+ done
+ 
+Set the following environment variables to point to where cuDNN is located. To access the value of the $(CUDA_PATH) environment variable, perform the following steps:
+
+Open a command prompt from the Start menu.
+Type Run and hit Enter.
+Issue the control sysdm.cpl command.
+Select the Advanced tab at the top of the window.
+Click Environment Variables at the bottom of the window.
+Ensure the following values are set:
+Variable Name: CUDA_PATH 
+Variable Value: C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.2
+Check
+
+Used tensorflow_self_check.py
+https://gist.github.com/diarabit/17d9051f9505c9d554d8a7d0c2bc4eb1
+
+I went into Anaconda Navigator
+Created an environment
+Installed tensorflow
+tensorflow gpu
+
+Include cudnn.lib in your Visual Studio project.
+Open the Visual Studio project and right-click on the project name.
+Click Linker > Input > Additional Dependencies.
+Add cudnn.lib and click OK.
+-- Not done - I have to add this to Python 
+ 
+ 
  # Creating a new set of images for training a model.
  I wanted to create an image processor on Colab using R, but I still have problems importing libraries like imager into Colab, so I will use Python
  
